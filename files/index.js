@@ -1,7 +1,5 @@
-exports.handler = function (event, context) {
-    context.succeed('hello world');
-};
+exports.handle = function (event, context) {
 
-index.handle = function (event, context) {
-    context.succeed('hello from index');
+    context.succeed('{}');
+
 };
