@@ -196,5 +196,5 @@ resource "aws_api_gateway_deployment" "test_api_deployment" {
 ///////////////////////////////////////////////////////////////
 
 output "user_message" {
-  value = "Test command:     curl -d {} ${aws_api_gateway_deployment.test_api_deployment.invoke_url}/event/push"
+  value = "Test command:     curl -H 'Content-Type: application/json' -d '{}' ${aws_api_gateway_deployment.test_api_deployment.invoke_url}/event/push"
 }
