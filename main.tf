@@ -1,3 +1,6 @@
+// Copyright 2020 Jakub Bielecki
+// Adapted from https://sysgears.com/articles/moving-lambda-function-from-serverless-to-terraform/
+
 terraform {
   required_providers {
     aws = ">= 2.42.0, <= 2.42.0"
